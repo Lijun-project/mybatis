@@ -1,0 +1,8 @@
+<mapper namespace="user">
+    <select id="selectUserList" resultType="com.learn.entity.User">
+        select * from user
+    </select>
+    <select id="selectUserInfo" resultType="com.learn.entity.User" paramterType="com.learn.entity.User">
+        select * from user where 1=1 AND name = #{name}
+    </select>
+</mapper>
